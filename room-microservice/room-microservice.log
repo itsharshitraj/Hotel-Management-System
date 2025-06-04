@@ -1,0 +1,374 @@
+2025-04-12T21:43:29.169+05:30  INFO 9812 --- [Room-microservice] [main] c.h.r.RoomMicroserviceApplication        : Starting RoomMicroserviceApplication using Java 20.0.2 with PID 9812 (D:\HotelManagement-System\room-microservice\target\classes started by itsha in D:\HotelManagement-System\room-microservice)
+2025-04-12T21:43:29.172+05:30 DEBUG 9812 --- [Room-microservice] [main] c.h.r.RoomMicroserviceApplication        : Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-04-12T21:43:29.174+05:30  INFO 9812 --- [Room-microservice] [main] c.h.r.RoomMicroserviceApplication        : No active profile set, falling back to 1 default profile: "default"
+2025-04-12T21:43:31.277+05:30  INFO 9812 --- [Room-microservice] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-12T21:43:31.650+05:30  INFO 9812 --- [Room-microservice] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 350 ms. Found 1 JPA repository interface.
+2025-04-12T21:43:31.976+05:30  INFO 9812 --- [Room-microservice] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=3fc5ed2f-8a96-3ef6-847b-b1c3f2fd7092
+2025-04-12T21:43:33.736+05:30  INFO 9812 --- [Room-microservice] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2025-04-12T21:43:33.762+05:30  INFO 9812 --- [Room-microservice] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-12T21:43:33.762+05:30  INFO 9812 --- [Room-microservice] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-12T21:43:33.864+05:30  INFO 9812 --- [Room-microservice] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-12T21:43:33.864+05:30  INFO 9812 --- [Room-microservice] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4601 ms
+2025-04-12T21:43:34.620+05:30  INFO 9812 --- [Room-microservice] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-12T21:43:34.762+05:30  INFO 9812 --- [Room-microservice] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-04-12T21:43:34.832+05:30  INFO 9812 --- [Room-microservice] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-04-12T21:43:35.318+05:30  INFO 9812 --- [Room-microservice] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-12T21:43:35.376+05:30  INFO 9812 --- [Room-microservice] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-04-12T21:43:36.006+05:30  INFO 9812 --- [Room-microservice] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@fe38c0e
+2025-04-12T21:43:36.009+05:30  INFO 9812 --- [Room-microservice] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-04-12T21:43:36.206+05:30  WARN 9812 --- [Room-microservice] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-12T21:43:36.234+05:30  INFO 9812 --- [Room-microservice] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.39
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-12T21:43:37.469+05:30  INFO 9812 --- [Room-microservice] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-12T21:43:37.649+05:30  INFO 9812 --- [Room-microservice] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-12T21:43:38.414+05:30  WARN 9812 --- [Room-microservice] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-12T21:43:40.262+05:30  INFO 9812 --- [Room-microservice] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-04-12T21:43:40.359+05:30  WARN 9812 --- [Room-microservice] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-04-12T21:43:40.376+05:30  INFO 9812 --- [Room-microservice] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-04-12T21:43:40.478+05:30  INFO 9812 --- [Room-microservice] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-04-12T21:43:40.517+05:30  INFO 9812 --- [Room-microservice] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-04-12T21:43:40.522+05:30  INFO 9812 --- [Room-microservice] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-04-12T21:43:40.533+05:30  INFO 9812 --- [Room-microservice] [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-04-12T21:43:40.533+05:30  INFO 9812 --- [Room-microservice] [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-04-12T21:43:40.534+05:30  INFO 9812 --- [Room-microservice] [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-04-12T21:43:40.534+05:30  INFO 9812 --- [Room-microservice] [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-04-12T21:43:40.534+05:30  INFO 9812 --- [Room-microservice] [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-04-12T21:43:40.534+05:30  INFO 9812 --- [Room-microservice] [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-04-12T21:43:40.534+05:30  INFO 9812 --- [Room-microservice] [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-04-12T21:43:41.063+05:30  INFO 9812 --- [Room-microservice] [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-04-12T21:43:41.067+05:30  INFO 9812 --- [Room-microservice] [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-04-12T21:43:41.071+05:30  INFO 9812 --- [Room-microservice] [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-04-12T21:43:41.074+05:30  INFO 9812 --- [Room-microservice] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1744474421072 with initial instances count: 5
+2025-04-12T21:43:41.085+05:30  INFO 9812 --- [Room-microservice] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ROOM-MICROSERVICE with eureka with status UP
+2025-04-12T21:43:41.086+05:30  INFO 9812 --- [Room-microservice] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1744474421086, current=UP, previous=STARTING]
+2025-04-12T21:43:41.088+05:30  INFO 9812 --- [Room-microservice] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ROOM-MICROSERVICE/Harshit-Pavillion-QOVUJ78J:Room-microservice:8082: registering service...
+2025-04-12T21:43:41.097+05:30  INFO 9812 --- [Room-microservice] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application ROOM-MICROSERVICE with eureka with status DOWN
+2025-04-12T21:43:41.097+05:30  INFO 9812 --- [Room-microservice] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1744474421097, current=DOWN, previous=UP]
+2025-04-12T21:43:41.098+05:30  WARN 9812 --- [Room-microservice] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-04-12T21:43:41.102+05:30  INFO 9812 --- [Room-microservice] [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-12T21:43:41.106+05:30  INFO 9812 --- [Room-microservice] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-04-12T21:43:41.120+05:30  INFO 9812 --- [Room-microservice] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-04-12T21:43:41.121+05:30  INFO 9812 --- [Room-microservice] [main] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-04-12T21:43:41.290+05:30  INFO 9812 --- [Room-microservice] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ROOM-MICROSERVICE/Harshit-Pavillion-QOVUJ78J:Room-microservice:8082 - registration status: 204
+2025-04-12T21:43:41.290+05:30  INFO 9812 --- [Room-microservice] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ROOM-MICROSERVICE/Harshit-Pavillion-QOVUJ78J:Room-microservice:8082: registering service...
+2025-04-12T21:43:41.307+05:30  INFO 9812 --- [Room-microservice] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ROOM-MICROSERVICE/Harshit-Pavillion-QOVUJ78J:Room-microservice:8082 - registration status: 204
+2025-04-12T21:43:41.308+05:30  INFO 9812 --- [Room-microservice] [main] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-04-12T21:43:41.328+05:30  INFO 9812 --- [Room-microservice] [main] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ROOM-MICROSERVICE/Harshit-Pavillion-QOVUJ78J:Room-microservice:8082 - deregister  status: 200
+2025-04-12T21:43:41.328+05:30  INFO 9812 --- [Room-microservice] [main] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-04-12T21:43:41.358+05:30  INFO 9812 --- [Room-microservice] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-04-12T21:43:41.392+05:30 ERROR 9812 --- [Room-microservice] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8082 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8082 or configure this application to listen on another port.
+
+2025-04-12T21:46:37.674+05:30  INFO 4832 --- [Room-microservice] [main] c.h.r.RoomMicroserviceApplication        : Starting RoomMicroserviceApplication using Java 20.0.2 with PID 4832 (D:\HotelManagement-System\room-microservice\target\classes started by itsha in D:\HotelManagement-System\room-microservice)
+2025-04-12T21:46:37.679+05:30 DEBUG 4832 --- [Room-microservice] [main] c.h.r.RoomMicroserviceApplication        : Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-04-12T21:46:37.680+05:30  INFO 4832 --- [Room-microservice] [main] c.h.r.RoomMicroserviceApplication        : No active profile set, falling back to 1 default profile: "default"
+2025-04-12T21:46:39.372+05:30  INFO 4832 --- [Room-microservice] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-12T21:46:39.630+05:30  INFO 4832 --- [Room-microservice] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 243 ms. Found 1 JPA repository interface.
+2025-04-12T21:46:39.886+05:30  INFO 4832 --- [Room-microservice] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=3fc5ed2f-8a96-3ef6-847b-b1c3f2fd7092
+2025-04-12T21:46:41.127+05:30  INFO 4832 --- [Room-microservice] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2025-04-12T21:46:41.153+05:30  INFO 4832 --- [Room-microservice] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-12T21:46:41.154+05:30  INFO 4832 --- [Room-microservice] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-12T21:46:41.240+05:30  INFO 4832 --- [Room-microservice] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-12T21:46:41.241+05:30  INFO 4832 --- [Room-microservice] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3483 ms
+2025-04-12T21:46:41.946+05:30  INFO 4832 --- [Room-microservice] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-12T21:46:42.065+05:30  INFO 4832 --- [Room-microservice] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-04-12T21:46:42.131+05:30  INFO 4832 --- [Room-microservice] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-04-12T21:46:42.578+05:30  INFO 4832 --- [Room-microservice] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-12T21:46:42.631+05:30  INFO 4832 --- [Room-microservice] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-04-12T21:46:43.156+05:30  INFO 4832 --- [Room-microservice] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@39109603
+2025-04-12T21:46:43.159+05:30  INFO 4832 --- [Room-microservice] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-04-12T21:46:43.242+05:30  WARN 4832 --- [Room-microservice] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-12T21:46:43.272+05:30  INFO 4832 --- [Room-microservice] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.39
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-12T21:46:44.370+05:30  INFO 4832 --- [Room-microservice] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-12T21:46:44.450+05:30  INFO 4832 --- [Room-microservice] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-12T21:46:45.145+05:30  WARN 4832 --- [Room-microservice] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-12T21:46:46.730+05:30  INFO 4832 --- [Room-microservice] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-04-12T21:46:46.853+05:30  WARN 4832 --- [Room-microservice] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-04-12T21:46:46.873+05:30  INFO 4832 --- [Room-microservice] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-04-12T21:46:47.000+05:30  INFO 4832 --- [Room-microservice] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-04-12T21:46:47.034+05:30  INFO 4832 --- [Room-microservice] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-04-12T21:46:47.039+05:30  INFO 4832 --- [Room-microservice] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-04-12T21:46:47.053+05:30  INFO 4832 --- [Room-microservice] [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-04-12T21:46:47.053+05:30  INFO 4832 --- [Room-microservice] [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-04-12T21:46:47.053+05:30  INFO 4832 --- [Room-microservice] [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-04-12T21:46:47.053+05:30  INFO 4832 --- [Room-microservice] [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-04-12T21:46:47.053+05:30  INFO 4832 --- [Room-microservice] [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-04-12T21:46:47.053+05:30  INFO 4832 --- [Room-microservice] [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-04-12T21:46:47.054+05:30  INFO 4832 --- [Room-microservice] [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-04-12T21:46:47.584+05:30  INFO 4832 --- [Room-microservice] [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-04-12T21:46:47.588+05:30  INFO 4832 --- [Room-microservice] [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-04-12T21:46:47.591+05:30  INFO 4832 --- [Room-microservice] [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-04-12T21:46:47.595+05:30  INFO 4832 --- [Room-microservice] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1744474607593 with initial instances count: 5
+2025-04-12T21:46:47.606+05:30  INFO 4832 --- [Room-microservice] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ROOM-MICROSERVICE with eureka with status UP
+2025-04-12T21:46:47.607+05:30  INFO 4832 --- [Room-microservice] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1744474607607, current=UP, previous=STARTING]
+2025-04-12T21:46:47.609+05:30  INFO 4832 --- [Room-microservice] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ROOM-MICROSERVICE/Harshit-Pavillion-QOVUJ78J:Room-microservice:8082: registering service...
+2025-04-12T21:46:47.618+05:30  INFO 4832 --- [Room-microservice] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application ROOM-MICROSERVICE with eureka with status DOWN
+2025-04-12T21:46:47.619+05:30  INFO 4832 --- [Room-microservice] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1744474607619, current=DOWN, previous=UP]
+2025-04-12T21:46:47.619+05:30  WARN 4832 --- [Room-microservice] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-04-12T21:46:47.625+05:30  INFO 4832 --- [Room-microservice] [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-12T21:46:47.628+05:30  INFO 4832 --- [Room-microservice] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-04-12T21:46:47.640+05:30  INFO 4832 --- [Room-microservice] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-04-12T21:46:47.642+05:30  INFO 4832 --- [Room-microservice] [main] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-04-12T21:46:47.707+05:30  INFO 4832 --- [Room-microservice] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ROOM-MICROSERVICE/Harshit-Pavillion-QOVUJ78J:Room-microservice:8082 - registration status: 204
+2025-04-12T21:46:47.707+05:30  INFO 4832 --- [Room-microservice] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ROOM-MICROSERVICE/Harshit-Pavillion-QOVUJ78J:Room-microservice:8082: registering service...
+2025-04-12T21:46:47.713+05:30  INFO 4832 --- [Room-microservice] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ROOM-MICROSERVICE/Harshit-Pavillion-QOVUJ78J:Room-microservice:8082 - registration status: 204
+2025-04-12T21:46:47.713+05:30  INFO 4832 --- [Room-microservice] [main] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-04-12T21:46:47.722+05:30  INFO 4832 --- [Room-microservice] [main] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ROOM-MICROSERVICE/Harshit-Pavillion-QOVUJ78J:Room-microservice:8082 - deregister  status: 200
+2025-04-12T21:46:47.723+05:30  INFO 4832 --- [Room-microservice] [main] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-04-12T21:46:47.747+05:30  INFO 4832 --- [Room-microservice] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-04-12T21:46:47.776+05:30 ERROR 4832 --- [Room-microservice] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8082 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8082 or configure this application to listen on another port.
+
+2025-04-12T21:47:11.071+05:30  INFO 24308 --- [Room-microservice] [main] c.h.r.RoomMicroserviceApplication        : Starting RoomMicroserviceApplication using Java 20.0.2 with PID 24308 (D:\HotelManagement-System\room-microservice\target\classes started by itsha in D:\HotelManagement-System\room-microservice)
+2025-04-12T21:47:11.079+05:30 DEBUG 24308 --- [Room-microservice] [main] c.h.r.RoomMicroserviceApplication        : Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-04-12T21:47:11.081+05:30  INFO 24308 --- [Room-microservice] [main] c.h.r.RoomMicroserviceApplication        : No active profile set, falling back to 1 default profile: "default"
+2025-04-12T21:47:12.871+05:30  INFO 24308 --- [Room-microservice] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-12T21:47:13.030+05:30  INFO 24308 --- [Room-microservice] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 145 ms. Found 1 JPA repository interface.
+2025-04-12T21:47:13.345+05:30  INFO 24308 --- [Room-microservice] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=3fc5ed2f-8a96-3ef6-847b-b1c3f2fd7092
+2025-04-12T21:47:14.503+05:30  INFO 24308 --- [Room-microservice] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8096 (http)
+2025-04-12T21:47:14.530+05:30  INFO 24308 --- [Room-microservice] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-12T21:47:14.531+05:30  INFO 24308 --- [Room-microservice] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-12T21:47:14.626+05:30  INFO 24308 --- [Room-microservice] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-12T21:47:14.627+05:30  INFO 24308 --- [Room-microservice] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3448 ms
+2025-04-12T21:47:15.413+05:30  INFO 24308 --- [Room-microservice] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-12T21:47:15.547+05:30  INFO 24308 --- [Room-microservice] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-04-12T21:47:15.638+05:30  INFO 24308 --- [Room-microservice] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-04-12T21:47:16.166+05:30  INFO 24308 --- [Room-microservice] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-12T21:47:16.217+05:30  INFO 24308 --- [Room-microservice] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-04-12T21:47:16.759+05:30  INFO 24308 --- [Room-microservice] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2c7c898a
+2025-04-12T21:47:16.763+05:30  INFO 24308 --- [Room-microservice] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-04-12T21:47:16.837+05:30  WARN 24308 --- [Room-microservice] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-12T21:47:16.862+05:30  INFO 24308 --- [Room-microservice] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.39
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-12T21:47:17.960+05:30  INFO 24308 --- [Room-microservice] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-12T21:47:18.033+05:30  INFO 24308 --- [Room-microservice] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-12T21:47:18.714+05:30  WARN 24308 --- [Room-microservice] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-12T21:47:20.639+05:30  INFO 24308 --- [Room-microservice] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-04-12T21:47:20.789+05:30  WARN 24308 --- [Room-microservice] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-04-12T21:47:20.813+05:30  INFO 24308 --- [Room-microservice] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-04-12T21:47:20.999+05:30  INFO 24308 --- [Room-microservice] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-04-12T21:47:21.064+05:30  INFO 24308 --- [Room-microservice] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-04-12T21:47:21.078+05:30  INFO 24308 --- [Room-microservice] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-04-12T21:47:21.102+05:30  INFO 24308 --- [Room-microservice] [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-04-12T21:47:21.102+05:30  INFO 24308 --- [Room-microservice] [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-04-12T21:47:21.102+05:30  INFO 24308 --- [Room-microservice] [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-04-12T21:47:21.103+05:30  INFO 24308 --- [Room-microservice] [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-04-12T21:47:21.103+05:30  INFO 24308 --- [Room-microservice] [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-04-12T21:47:21.103+05:30  INFO 24308 --- [Room-microservice] [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-04-12T21:47:21.103+05:30  INFO 24308 --- [Room-microservice] [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-04-12T21:47:21.796+05:30  INFO 24308 --- [Room-microservice] [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-04-12T21:47:21.800+05:30  INFO 24308 --- [Room-microservice] [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-04-12T21:47:21.803+05:30  INFO 24308 --- [Room-microservice] [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-04-12T21:47:21.809+05:30  INFO 24308 --- [Room-microservice] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1744474641805 with initial instances count: 5
+2025-04-12T21:47:21.826+05:30  INFO 24308 --- [Room-microservice] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ROOM-MICROSERVICE with eureka with status UP
+2025-04-12T21:47:21.828+05:30  INFO 24308 --- [Room-microservice] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1744474641828, current=UP, previous=STARTING]
+2025-04-12T21:47:21.832+05:30  INFO 24308 --- [Room-microservice] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ROOM-MICROSERVICE/Harshit-Pavillion-QOVUJ78J:Room-microservice:8096: registering service...
+2025-04-12T21:47:21.875+05:30  INFO 24308 --- [Room-microservice] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8096 (http) with context path '/'
+2025-04-12T21:47:21.877+05:30  INFO 24308 --- [Room-microservice] [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8096
+2025-04-12T21:47:21.907+05:30  INFO 24308 --- [Room-microservice] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ROOM-MICROSERVICE/Harshit-Pavillion-QOVUJ78J:Room-microservice:8096 - registration status: 204
+2025-04-12T21:47:21.965+05:30  INFO 24308 --- [Room-microservice] [main] c.h.r.RoomMicroserviceApplication        : Started RoomMicroserviceApplication in 12.093 seconds (process running for 13.306)
+2025-04-12T21:50:27.958+05:30  INFO 24308 --- [Room-microservice] [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application ROOM-MICROSERVICE with eureka with status DOWN
+2025-04-12T21:50:27.964+05:30  INFO 24308 --- [Room-microservice] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1744474827964, current=DOWN, previous=UP]
+2025-04-12T21:50:27.966+05:30  INFO 24308 --- [Room-microservice] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ROOM-MICROSERVICE/Harshit-Pavillion-QOVUJ78J:Room-microservice:8096: registering service...
+2025-04-12T21:50:28.014+05:30  INFO 24308 --- [Room-microservice] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ROOM-MICROSERVICE/Harshit-Pavillion-QOVUJ78J:Room-microservice:8096 - registration status: 204
+2025-04-12T21:50:28.018+05:30  INFO 24308 --- [Room-microservice] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-12T21:50:28.061+05:30  INFO 24308 --- [Room-microservice] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-04-12T21:50:28.086+05:30  INFO 24308 --- [Room-microservice] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-12T21:50:28.104+05:30  INFO 24308 --- [Room-microservice] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-04-12T21:50:28.144+05:30  INFO 24308 --- [Room-microservice] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-04-12T21:50:28.153+05:30  INFO 24308 --- [Room-microservice] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-04-12T21:50:31.168+05:30  INFO 24308 --- [Room-microservice] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-04-12T21:50:31.189+05:30  INFO 24308 --- [Room-microservice] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ROOM-MICROSERVICE/Harshit-Pavillion-QOVUJ78J:Room-microservice:8096 - deregister  status: 200
+2025-04-12T21:50:31.189+05:30  INFO 24308 --- [Room-microservice] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-04-12T21:50:38.485+05:30  INFO 4052 --- [Room-microservice] [main] c.h.r.RoomMicroserviceApplication        : Starting RoomMicroserviceApplication using Java 20.0.2 with PID 4052 (D:\HotelManagement-System\room-microservice\target\classes started by itsha in D:\HotelManagement-System\room-microservice)
+2025-04-12T21:50:38.488+05:30 DEBUG 4052 --- [Room-microservice] [main] c.h.r.RoomMicroserviceApplication        : Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-04-12T21:50:38.490+05:30  INFO 4052 --- [Room-microservice] [main] c.h.r.RoomMicroserviceApplication        : No active profile set, falling back to 1 default profile: "default"
+2025-04-12T21:50:40.319+05:30  INFO 4052 --- [Room-microservice] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-12T21:50:40.591+05:30  INFO 4052 --- [Room-microservice] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 254 ms. Found 1 JPA repository interface.
+2025-04-12T21:50:40.883+05:30  INFO 4052 --- [Room-microservice] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=3fc5ed2f-8a96-3ef6-847b-b1c3f2fd7092
+2025-04-12T21:50:42.214+05:30  INFO 4052 --- [Room-microservice] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8096 (http)
+2025-04-12T21:50:42.238+05:30  INFO 4052 --- [Room-microservice] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-12T21:50:42.238+05:30  INFO 4052 --- [Room-microservice] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-12T21:50:42.327+05:30  INFO 4052 --- [Room-microservice] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-12T21:50:42.327+05:30  INFO 4052 --- [Room-microservice] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3749 ms
+2025-04-12T21:50:43.071+05:30  INFO 4052 --- [Room-microservice] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-12T21:50:43.203+05:30  INFO 4052 --- [Room-microservice] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-04-12T21:50:43.275+05:30  INFO 4052 --- [Room-microservice] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-04-12T21:50:43.745+05:30  INFO 4052 --- [Room-microservice] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-12T21:50:43.796+05:30  INFO 4052 --- [Room-microservice] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-04-12T21:50:44.428+05:30  INFO 4052 --- [Room-microservice] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@220cda54
+2025-04-12T21:50:44.431+05:30  INFO 4052 --- [Room-microservice] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-04-12T21:50:44.552+05:30  WARN 4052 --- [Room-microservice] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-12T21:50:44.581+05:30  INFO 4052 --- [Room-microservice] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.39
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-12T21:50:45.718+05:30  INFO 4052 --- [Room-microservice] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-12T21:50:45.836+05:30  INFO 4052 --- [Room-microservice] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-12T21:50:46.457+05:30  WARN 4052 --- [Room-microservice] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-12T21:50:48.043+05:30  INFO 4052 --- [Room-microservice] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-04-12T21:50:48.161+05:30  WARN 4052 --- [Room-microservice] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-04-12T21:50:48.180+05:30  INFO 4052 --- [Room-microservice] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-04-12T21:50:48.309+05:30  INFO 4052 --- [Room-microservice] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-04-12T21:50:48.353+05:30  INFO 4052 --- [Room-microservice] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-04-12T21:50:48.357+05:30  INFO 4052 --- [Room-microservice] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-04-12T21:50:48.367+05:30  INFO 4052 --- [Room-microservice] [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-04-12T21:50:48.367+05:30  INFO 4052 --- [Room-microservice] [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-04-12T21:50:48.367+05:30  INFO 4052 --- [Room-microservice] [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-04-12T21:50:48.367+05:30  INFO 4052 --- [Room-microservice] [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-04-12T21:50:48.367+05:30  INFO 4052 --- [Room-microservice] [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-04-12T21:50:48.367+05:30  INFO 4052 --- [Room-microservice] [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-04-12T21:50:48.367+05:30  INFO 4052 --- [Room-microservice] [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-04-12T21:50:48.897+05:30  INFO 4052 --- [Room-microservice] [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-04-12T21:50:48.900+05:30  INFO 4052 --- [Room-microservice] [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-04-12T21:50:48.903+05:30  INFO 4052 --- [Room-microservice] [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-04-12T21:50:48.906+05:30  INFO 4052 --- [Room-microservice] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1744474848904 with initial instances count: 5
+2025-04-12T21:50:48.918+05:30  INFO 4052 --- [Room-microservice] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ROOM-MICROSERVICE with eureka with status UP
+2025-04-12T21:50:48.919+05:30  INFO 4052 --- [Room-microservice] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1744474848919, current=UP, previous=STARTING]
+2025-04-12T21:50:48.922+05:30  INFO 4052 --- [Room-microservice] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ROOM-MICROSERVICE/Harshit-Pavillion-QOVUJ78J:Room-microservice:8096: registering service...
+2025-04-12T21:50:48.956+05:30  INFO 4052 --- [Room-microservice] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8096 (http) with context path '/'
+2025-04-12T21:50:48.957+05:30  INFO 4052 --- [Room-microservice] [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8096
+2025-04-12T21:50:48.982+05:30  INFO 4052 --- [Room-microservice] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ROOM-MICROSERVICE/Harshit-Pavillion-QOVUJ78J:Room-microservice:8096 - registration status: 204
+2025-04-12T21:50:49.040+05:30  INFO 4052 --- [Room-microservice] [main] c.h.r.RoomMicroserviceApplication        : Started RoomMicroserviceApplication in 11.678 seconds (process running for 12.761)
+2025-04-12T21:51:00.368+05:30  INFO 4052 --- [Room-microservice] [http-nio-8096-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-12T21:51:00.368+05:30  INFO 4052 --- [Room-microservice] [http-nio-8096-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-04-12T21:51:00.371+05:30  INFO 4052 --- [Room-microservice] [http-nio-8096-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-04-12T21:51:00.428+05:30  INFO 4052 --- [Room-microservice] [http-nio-8096-exec-1] c.h.r.aspect.LoggingAspect               : Controller method invoked: getAllRooms
+2025-04-12T21:51:00.695+05:30  INFO 4052 --- [Room-microservice] [http-nio-8096-exec-1] c.h.r.aspect.LoggingAspect               :  Method Returned: getAllRooms | Response: [Room(roomId=8, roomType=Deluxe, noOfBeds=2, roomStatus=true, roomRent=5000), Room(roomId=9, roomType=Deluxe, noOfBeds=2, roomStatus=true, roomRent=15000), Room(roomId=10, roomType=Deluxe, noOfBeds=2, roomStatus=true, roomRent=25000), Room(roomId=11, roomType=Deluxe, noOfBeds=2, roomStatus=true, roomRent=25000), Room(roomId=12, roomType=Deluxe, noOfBeds=2, roomStatus=true, roomRent=4000), Room(roomId=13, roomType=Deluxe, noOfBeds=2, roomStatus=true, roomRent=4200), Room(roomId=14, roomType=Suite, noOfBeds=3, roomStatus=true, roomRent=8000), Room(roomId=15, roomType=Standard, noOfBeds=1, roomStatus=true, roomRent=3000), Room(roomId=16, roomType=Suite, noOfBeds=2, roomStatus=true, roomRent=5000), Room(roomId=18, roomType=, noOfBeds=-1, roomStatus=true, roomRent=-200)]
+2025-04-12T21:52:58.175+05:30  INFO 4052 --- [Room-microservice] [http-nio-8096-exec-3] c.h.r.aspect.LoggingAspect               : Controller method invoked: getRoomById
+2025-04-12T21:52:58.201+05:30 ERROR 4052 --- [Room-microservice] [http-nio-8096-exec-3] c.h.r.aspect.LoggingAspect               :  Exception in: getRoomById
+
+org.springframework.web.server.ResponseStatusException: 404 NOT_FOUND "Room not found with id: 9999"
+	at com.hotel.room_microservice.controller.RoomController.lambda$getRoomById$0(RoomController.java:29) ~[classes/:na]
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403) ~[na:na]
+	at com.hotel.room_microservice.controller.RoomController.getRoomById(RoomController.java:29) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:57) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:727) ~[spring-aop-6.2.5.jar:6.2.5]
+	at com.hotel.room_microservice.controller.RoomController$$SpringCGLIB$$0.getRoomById(<generated>) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.39.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.39.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:114) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at java.base/java.lang.Thread.run(Thread.java:1623) ~[na:na]
+
+2025-04-12T21:54:20.260+05:30  INFO 4052 --- [Room-microservice] [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application ROOM-MICROSERVICE with eureka with status DOWN
+2025-04-12T21:54:20.266+05:30  INFO 4052 --- [Room-microservice] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1744475060266, current=DOWN, previous=UP]
+2025-04-12T21:54:20.268+05:30  INFO 4052 --- [Room-microservice] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ROOM-MICROSERVICE/Harshit-Pavillion-QOVUJ78J:Room-microservice:8096: registering service...
+2025-04-12T21:54:20.288+05:30  INFO 4052 --- [Room-microservice] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ROOM-MICROSERVICE/Harshit-Pavillion-QOVUJ78J:Room-microservice:8096 - registration status: 204
+2025-04-12T21:54:20.298+05:30  INFO 4052 --- [Room-microservice] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-12T21:54:20.335+05:30  INFO 4052 --- [Room-microservice] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-04-12T21:54:20.356+05:30  INFO 4052 --- [Room-microservice] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-12T21:54:20.368+05:30  INFO 4052 --- [Room-microservice] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-04-12T21:54:20.400+05:30  INFO 4052 --- [Room-microservice] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-04-12T21:54:20.403+05:30  INFO 4052 --- [Room-microservice] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-04-12T21:54:23.417+05:30  INFO 4052 --- [Room-microservice] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-04-12T21:54:23.438+05:30  INFO 4052 --- [Room-microservice] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ROOM-MICROSERVICE/Harshit-Pavillion-QOVUJ78J:Room-microservice:8096 - deregister  status: 200
+2025-04-12T21:54:23.438+05:30  INFO 4052 --- [Room-microservice] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
